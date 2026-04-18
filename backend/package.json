@@ -1,0 +1,26 @@
+{
+    "name": "polk",
+    "version": "1.0.0",
+    "description": "Compile & deploy solidity smart contracts to Polkadot EVM parachains",
+    "main": "deploy.js",
+    "type": "module",
+    "scripts": {
+        "compile": "solcjs --bin --abi --include-path node_modules --base-path . contracts/contract.sol -o build",
+        "deploy": "node deploy.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "dependencies": {
+        "@openzeppelin/contracts": "^4.9.3",
+        "@polkadot/api": "^10.9.1",
+        "@polkadot/api-contract": "^10.9.1",
+        "dotenv": "^16.3.1",
+        "ethers": "^6.7.1"
+    },
+    "devDependencies": {
+        "solc": "^0.8.19"
+    },
+    "engines": {
+        "node": ">=14"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "network": "moonbase-alpha",
+  "chainId": "1287",
+  "contractAddress": "0xd15c72E96f3Be18C8D8bb02b513fFBe74581eD85",
+  "deploymentTransactionHash": "0x845be9f880c00e23fcc51d785bd08b3d8b5a6def003aa05a0cfb1a23c1bde88d",
+  "deployedAt": "2025-04-27T13:29:07.410Z",
+  "contractName": "contracts_contract_sol_EasyACoin"
+}
