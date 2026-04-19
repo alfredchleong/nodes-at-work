@@ -1,42 +1,40 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract EthTokenMinter {
+contract BreadCoin {
     // Storage variables
     address public owner;
-    uint256 public ethTokenBalance;
-    
+    uint256 public totalSupply;
+    mapping(address => uint256) public balances;
+
     // Events
-    event EthTokenMinted(address indexed recipient, uint256 amount);
-    
+    event Mint(address indexed to, uint256 amount);
+
     // Constructor
     constructor() {
         owner = msg.sender;
     }
-    
-    // Fallback function to mint ETH tokens
-    receive() external payable {
-        mintEthTokens(msg.sender);
-    }
-    
-    // Internal function to mint ETH tokens
-    function mintEthTokens(address recipient) internal {
-        uint256 amount = 1 ether;
-        ethTokenBalance += amount;
-        emit EthTokenMinted(recipient, amount);
-        
-        // Placeholder for Knot API integration
-        addProductToCart("NNIOI287F");
+
+    // Functions
+    function mintBreadCoin() public {
+        balances[msg.sender] += 1;
+        totalSupply += 1;
+        emit Mint(msg.sender, 1);
+
+        authenticateKnotAPI();
+        addProductToCart();
         checkout();
     }
-    
-    // Placeholder function for Knot API: Add Product to Cart
-    function addProductToCart(string memory productId) internal {
-        // Implement API call logic here
+
+    function authenticateKnotAPI() internal {
+        // Knot API: Authenticate
     }
-    
-    // Placeholder function for Knot API: Checkout
+
+    function addProductToCart() internal {
+        // Knot API: Add Product to Cart (Product ID: NI8ND83)
+    }
+
     function checkout() internal {
-        // Implement API call logic here
+        // Knot API: Checkout
     }
 }

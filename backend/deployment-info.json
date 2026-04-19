@@ -1,8 +1,8 @@
 {
   "network": "moonbase-alpha",
   "chainId": "1287",
-  "contractAddress": "0x9fFD7ae2c76422dB950Fbbb32bB2e9E6E2Bd6167",
-  "deploymentTransactionHash": "0x2780eddadb6b75fbadd575d9867e9c0d7bae8c86995bff5efdcd336064e3d783",
-  "deployedAt": "2026-04-19T06:00:03.711Z",
-  "contractName": "contracts_contract_sol_DeanCoin"
+  "contractAddress": "0x4f48aFd89f1922089768c261f479A01d7cc997a8",
+  "deploymentTransactionHash": "0xec9f73e1a6f710e5e304d829ef7d4040c1654099db63d705846467433122df46",
+  "deployedAt": "2026-04-19T07:49:49.300Z",
+  "contractName": "contracts_contract_sol_BreadCoin"
 }

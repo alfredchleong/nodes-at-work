@@ -4,6 +4,7 @@ Instructions:
 - Analyze the compiled Solidity code briefly.
 - If the code successfully implements a coherent and correct smart contract logic, output exactly one brief sentence congratulating them (e.g. "Congrats! Your code looks good and is ready to deploy.").
 - If the code is incorrect, missing key elements, or could be improved, provide brief hints on what to fix in plain text.
+- IMPORTANT LOGIC CHECK: If the logic involves "Add Product to Cart" or "Checkout", you must verify that an "Authenticate Session" step happens first. If it doesn't, tell them they need to authenticate the session first.
 - OUTPUT ONLY PLAIN TEXT.
 - DO NOT use any markdown styling whatsoever (no bold, no asterisks, no code blocks, no backticks, no headings, no bullet points).
 - Keep your response extremely concise, ideally one or two sentences.
