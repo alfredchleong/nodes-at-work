@@ -81,7 +81,7 @@ document.write(`
   </xml>
   `);  
     
-    // 2) Define all custom blocks via JSON array
+    // 2) Define all custom blocks via JSON array 
     typeof Blockly !== 'undefined' && Blockly.defineBlocksWithJsonArray([
       {"type":"when_contract_starts","message0":"when contract starts","hat":"cap","nextStatement":null,"colour":"#E6007A"},
       {"type":"when_tx_received","message0":"when transaction received","hat":"cap","nextStatement":null,"colour":"#E6007A"},
